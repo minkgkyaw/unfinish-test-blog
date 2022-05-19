@@ -1,0 +1,62 @@
+.login-container {
+  @apply w-full mx-auto flex flex-col justify-center items-center py-5;
+
+  .login-title {
+    @apply mx-auto text-center font-play font-bold md:text-xl text-slate-600 dark:text-slate-100;
+  }
+
+  .login-form {
+    @apply flex w-11/12 lg:w-3/5 xl:w-3/6 mx-auto flex-col p-5 border border-slate-400 my-10 space-y-5  bg-slate-50 dark:bg-transparent rounded;
+
+    .form {
+      @apply w-full flex flex-col align-middle items-center justify-start space-y-12 py-10 md:px-5;
+      .form-group {
+        @apply justify-between w-full mx-auto grid space-y-3;
+
+        .form-control {
+          @apply grid grid-cols-12 items-center shrink col-span-12;
+
+          label {
+            @apply col-span-5 md:col-span-3 flex md:space-x-5 space-x-1 items-center text-slate-600 dark:text-slate-100;
+
+            span {
+              @apply font-abel tracking-widest first-letter:uppercase;
+            }
+          }
+
+          input {
+            @apply col-span-7 md:col-span-9 appearance-none border-x-0 border-t-0 border-b-2 border-slate-900 dark:border-white bg-slate-200 ring-0 dark:bg-slate-600 rounded-t font-abel tracking-wider dark:placeholder:text-slate-300;
+          }
+        }
+
+        p {
+          @apply text-right col-span-12 text-rose-500 dark:text-yellow-500 text-lg font-abel md:tracking-widest;
+        }
+      }
+
+      .action {
+        @apply flex items-center flex-col space-y-10;
+
+        button {
+          @apply p-3 rounded border-2 flex space-x-3 transition-colors bg-slate-700 text-slate-200 items-center align-middle capitalize disabled:cursor-not-allowed disabled:bg-slate-500;
+
+          span {
+            @apply font-abel tracking-widest text-white;
+          }
+        }
+
+        .register {
+          @apply flex space-x-2 justify-center items-center align-middle;
+
+          p {
+            @apply text-sm text-slate-400 dark:text-slate-300;
+          }
+
+          a {
+            @apply font-play capitalize text-blue-500 dark:text-yellow-300 font-bold dark:tracking-wider underline underline-offset-2;
+          }
+        }
+      }
+    }
+  }
+}

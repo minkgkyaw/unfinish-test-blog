@@ -1,0 +1,7 @@
+.header {
+  @apply px-5 h-12 lg:h-20 w-full border-b border-opacity-50 flex justify-start items-center;
+
+  .logo-text {
+    @apply text-slate-700 text-xl cursor-pointer dark:text-slate-100;
+  }
+}

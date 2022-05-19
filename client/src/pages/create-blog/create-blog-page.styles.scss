@@ -1,0 +1,42 @@
+input[type=file]::-webkit-file-upload-button,
+input[type=file]::file-selector-button {
+    @apply text-white bg-slate-700 hover:bg-gray-600 font-medium  cursor-pointer border-0 py-2.5 pl-8 pr-4 h-14;
+    margin-inline-start: -1rem;
+    margin-inline-end: 1rem;
+}
+
+.submit-btn {
+  @apply p-3 rounded-xl border-2 border-indigo-400 mx-auto text-indigo-500 bg-slate-100 font-abel tracking-widest hover:transition-all hover:scale-110 hover:duration-200 hover:text-indigo-600 hover:border-indigo-600 hover:ease-in-out flex justify-between items-center space-x-3 disabled:border-slate-600 disabled:text-slate-600 disabled:cursor-not-allowed disabled:scale-0;
+}
+
+.create-blog-container {
+  @apply container mx-auto py-5;
+
+  .title {
+    @apply text-2xl text-center tracking-widest font-play text-slate-800 mx-auto;
+  }
+
+  .form {
+    @apply my-5 py-5 max-w-5xl mx-auto border rounded border-slate-500 bg-slate-50 flex flex-col space-y-6
+  }
+
+  .form-group {
+    @apply flex flex-col mx-10 space-y-2;
+
+    .label {
+      @apply text-slate-600 text-2xl font-abel;
+    }
+
+    .input {
+      @apply border h-14 border-slate-400 px-2 outline-none ring-0 text-slate-600 tracking-wider font-poppins first-letter:capitalize shadow-inner rounded-lg;
+    }
+
+    .error-box {
+      @apply text-right text-rose-600 first-letter:capitalize font-abel;
+    }
+
+    .file-input {
+      @apply block w-full cursor-pointer bg-slate-50 border border-slate-400 focus:outline-none focus:border-opacity-30 rounded-lg ring-0 text-slate-600 tracking-wider font-poppins first-letter:capitalize
+    }
+  }
+}

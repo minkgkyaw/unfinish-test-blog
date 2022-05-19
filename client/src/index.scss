@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#root {
+  @apply bg-gray-50 dark:text-slate-100 dark:bg-gradient-to-br dark:from-blue-800 dark:via-sky-800 dark:to-gray-800 snap-proximity scroll-smooth touch-none will-change-scroll overflow-hidden;
+}
+
+::-webkit-scrollbar {
+  @apply w-2 bg-slate-200 max-h-4 h-4;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply rounded bg-gradient-to-b from-yellow-300 via-teal-400 to-pink-500 max-h-3 h-3;
+}
